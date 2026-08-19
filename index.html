@@ -48,11 +48,15 @@ header.top{border-bottom:1px solid var(--rule);padding:3.2rem 0 2.4rem;margin-bo
 .links{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.9rem}
 nav.jump{display:flex;flex-wrap:wrap;gap:1.3rem;margin-top:2.4rem}
 nav.jump a{font-family:"IBM Plex Mono",monospace;font-size:.78rem;text-transform:uppercase;
-  letter-spacing:.09em;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
-nav.jump a:hover{border-bottom-color:var(--measured)}
+  letter-spacing:.09em;text-decoration:none;border-bottom:1px solid transparent;
+  padding-bottom:3px;color:var(--muted)}
+nav.jump a:hover{border-bottom-color:var(--rule);color:var(--ink)}
+nav.jump a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--measured)}
 
-section{padding:2.6rem 0;border-top:1px solid var(--rule)}
-section:first-of-type{border-top:0;padding-top:0}
+section{padding:2.4rem 0}
+html.js section[data-view]{display:none}
+html.js section[data-view].on{display:block;animation:fade .18s ease-out}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
 .section-head{display:flex;align-items:baseline;gap:.9rem;margin-bottom:1rem}
 
 /* the gap figure: reported vs corrected, on the paper's own number */
@@ -105,23 +109,22 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
       <h1>Florian Pothin</h1>
       <p class="role">PhD candidate in economics &middot; Universit&eacute; de Rennes, CREM UMR&nbsp;6211<br>
         Independent consultant</p>
-      <p class="mono">Defence November 2026 &middot; available from 2027 for postdoctoral
-        positions and freelance contracts</p>
+      <p class="mono">Defence November 2026 &middot; available from 2027</p>
       <div class="links">
         <a href="mailto:florian.pothin@univ-rennes.fr">florian.pothin@univ-rennes.fr</a>
         <a href="mailto:florian.pothin@univ-rennes.fr?subject=CV%20request">CV on request</a>
         <a href="https://orcid.org/0009-0007-9531-4393">ORCID</a>
-        <a href="https://linkedin.com/in/florian-pothin">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/florian-pothin-b76851173/">LinkedIn</a>
       </div>
     </div>
   </div>
-  <nav class="jump" aria-label="Sections">
-    <a href="#research">Research</a><a href="#data">Data &amp; code</a>
+  <nav class="jump" aria-label="Pages">
+    <a href="#home">Overview</a><a href="#research">Research</a><a href="#data">Data &amp; code</a>
     <a href="#teaching">Teaching</a><a href="#record">Record</a>
   </nav>
 </header>
 
-<section id="intro">
+<section id="home" data-view="home">
   <p class="lede">An emissions figure is not only measured. The boundary drawn, the categories
   set aside and the emission factors chosen are decisions of the entity the number describes.
   My research measures those decisions: how far they move reported emissions, how they
@@ -155,7 +158,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   </figure>
 </section>
 
-<section id="research">
+<section id="research" data-view="research">
   <div class="section-head"><h2>Research</h2><span class="eyebrow">by status</span></div>
   <p class="mono">Drafts available on request.</p>
 
@@ -290,7 +293,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   </article>
 </section>
 
-<section id="data">
+<section id="data" data-view="data">
   <div class="section-head"><h2>Data and code</h2></div>
   <p>Every paper ships a public replication package: the panel it is built on, the scripts that
   produce each number, and a provenance record naming which script makes which figure or table.
@@ -307,7 +310,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   </table></div>
 </section>
 
-<section id="teaching">
+<section id="teaching" data-view="teaching">
   <div class="section-head"><h2>Teaching</h2><span class="eyebrow">&asymp;250 hours</span></div>
   <p>My students become economists, quants and finance professionals. All three need the same
   habit, so I teach economics as a way of
@@ -331,7 +334,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <p class="mono">Teaching in French; able to teach in English.</p>
 </section>
 
-<section id="record">
+<section id="record" data-view="record">
   <div class="section-head"><h2>The rest of the record</h2></div>
 
   <h3>Presentations</h3>
@@ -408,5 +411,28 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <a href="mailto:florian.pothin@univ-rennes.fr">florian.pothin@univ-rennes.fr</a> &middot;
   <a href="https://orcid.org/0009-0007-9531-4393">ORCID 0009-0007-9531-4393</a></p>
 </footer>
+
+<script>
+(function () {
+  var VIEWS = ["home", "research", "data", "teaching", "record"];
+  document.documentElement.className += " js";
+  var sections = {}, links = {};
+  VIEWS.forEach(function (v) {
+    sections[v] = document.querySelector('section[data-view="' + v + '"]');
+    links[v] = document.querySelector('nav.jump a[href="#' + v + '"]');
+  });
+  function show(v, scroll) {
+    if (VIEWS.indexOf(v) === -1) v = "home";
+    VIEWS.forEach(function (k) {
+      sections[k].classList.toggle("on", k === v);
+      if (k === v) links[k].setAttribute("aria-current", "page");
+      else links[k].removeAttribute("aria-current");
+    });
+    if (scroll) window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", function () { show(location.hash.slice(1), true); });
+  show(location.hash.slice(1) || "home", false);
+})();
+</script>
 
 </div>
