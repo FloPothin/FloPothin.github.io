@@ -130,7 +130,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <p class="lede">I am a quantitative economist. I work on climate change and international trade, and I build theoretical models of how the economy and the climate shape each other. One finding runs through the work: the carbon numbers this field relies on are partly chosen. Someone decides what to count, what to leave out and which conversion factors to use. My research measures the effect of those choices: how far they move reported emissions, how they travel from companies through trade into national statistics, and what they mean for climate policy built on reported data.</p>
   <p>I also work extensively with artificial intelligence, and on it: machine learning and language models are part of my toolkit, always with their reliability measured, and the environmental footprint of AI services is one of my research objects. Every paper comes with a public replication package: the data and the code behind every number.</p>
   <div class="section-head" style="margin-top:2.2rem"><h2>The thesis</h2></div>
-  <p><strong>The Decarbonization Gap: Firms, Nations, and the Economics of an Unfinished Transition.</strong> PhD in economics, Universit&eacute; de Rennes (CREM UMR&nbsp;6211), carried out under a CIFRE agreement with Toovalu (ANRT grant no.&nbsp;2022/1627), a company I now work with as an independent consultant. Supervisors: Fabien Rondeau and Tovonony Razafindrabe; industrial supervisor: Arthur Macherey.</p>
+  <p><strong>The Decarbonization Gap: Firms, Nations, and the Economics of the Low-Carbon Transition.</strong> PhD in economics, Universit&eacute; de Rennes (CREM UMR&nbsp;6211), carried out under a CIFRE agreement with Toovalu (ANRT grant no.&nbsp;2022/1627), a company I now work with as an independent consultant. Supervisors: Fabien Rondeau and Tovonony Razafindrabe; industrial supervisor: Arthur Macherey.</p>
   <p>One question at three scales: when a company, a supply chain or a country reports less carbon, has anything physical changed? The thesis shows that measurement moves before the physical quantity does, and puts numbers on the difference.</p>
   <figure class="gap">
     <div class="bar" role="img" aria-label="Reported Scope 3 covers 78.3 percent of the corrected footprint; 21.7 percent is missing"><div class="rep"></div><div class="hid"></div></div>
@@ -146,10 +146,16 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <div class="section-head"><h2>Research</h2><span class="eyebrow">by status</span></div>
   <p class="mono">Drafts available on request.</p>
   <article class="paper">
-    <span class="status jmp">Job market paper &middot; under review</span>
-    <h3>Voluntary climate pledges widen what firms measure, not what they abate</h3>
+    <span class="status jmp">Job market paper &middot; under review, <em>Review of World Economics</em></span>
+    <h3>Trade shocks redraw the global carbon map but do not shrink it</h3>
+    <p class="meta mono">Sole-authored &middot; replication: <a href="https://doi.org/10.5281/zenodo.21889661">10.5281/zenodo.21889661</a></p>
+    <p>When trade is disrupted, does the carbon in it shrink or just move? I track product-level embodied carbon through three events: China joining the WTO, the US&ndash;China tariff war, and the 2022 sanctions on Russia, then generalise over 35 accessions and 9 sanction episodes. Integration pulls carbon-intensive production in slowly (+31% after ten years); sanctions push it out fast (up to &minus;88% off the sanctioning market). The carbon does not vanish: Russia's lost exports reappear in China, India and Turkey. With a trade elasticity estimated from the tariff war rather than assumed, a European carbon border tax cuts the covered carbon by a few percent, not by the double digits often claimed.</p>
+  </article>
+  <article class="paper">
+    <span class="status">Working paper &middot; revised for <em>Ecological Economics</em></span>
+    <h3>Do corporate climate pledges cut emissions? Science-based targets change what firms count first</h3>
     <p class="meta mono">Sole-authored &middot; replication: <a href="https://doi.org/10.5281/zenodo.21627772">10.5281/zenodo.21627772</a></p>
-    <p>Does a voluntary climate pledge change what companies cut, or what they count? I follow companies that join the Science Based Targets initiative through their CDP disclosures, 2015&ndash;2023. After a pledge, a company reports 2.5 more emission categories within four years, and reported supply-chain emissions rise by 0.3&ndash;0.5 log points simply because the reporting boundary widened. Hold each company's boundary fixed and the rise disappears. Direct emissions show a precisely estimated zero, and the fall in scopes 1+2 comes largely from renewable-energy certificates.</p>
+    <p>Does a voluntary climate pledge change what companies cut, or what they count? I follow companies that join the Science Based Targets initiative through their CDP disclosures, 2015&ndash;2023. In the year after a pledge, a company discloses 6.7 percentage points more of the Scope&nbsp;3 categories material to its sector. Reported Scope&nbsp;3 rises by 41%, while emissions within the categories it reported before the pledge fall by 32%, and Scope&nbsp;1 shows no lasting change: the sign of the measured effect depends on a boundary the company chooses.</p>
   </article>
   <article class="paper">
     <span class="status">Under review &middot; second round</span>
@@ -158,22 +164,16 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
     <p>How much of a company's supply-chain footprint is missing from its reports, and can the missing part be estimated? For each of the 15 standard reporting categories we check whether a company omits it or under-reports it, then estimate what is missing. Weighted by value, reported footprints miss 21.7% [19.5, 24.2] of the corrected total, and two thirds of the missing part sits in one category: the use of the products the company sells.</p>
   </article>
   <article class="paper">
-    <span class="status">Under review since June 2026</span>
+    <span class="status">Working paper &middot; being revised</span>
     <h3>A product-level Trade-LCA framework for embodied carbon accounting in global trade</h3>
     <p class="meta mono">Sole-authored &middot; preprint: <a href="https://doi.org/10.21203/rs.3.rs-10627706/v1">Research Square rs-10627706</a> &middot; code: <a href="https://doi.org/10.5281/zenodo.20719018">10.5281/zenodo.20719018</a></p>
     <p>Can the carbon in traded goods be measured product by product, and what do sector averages hide? I link bilateral trade flows to life-cycle emission factors for about 5,000 products and 120 countries, 1995&ndash;2023. A language model helps match customs codes to life-cycle processes, but only to pick among documented candidates, and its error rate is measured rather than assumed: a blind expert audit found 17 wrong matches per 100 products, and after repairs a second blind audit found 8. The audited account puts the carbon embodied in world goods trade at 14,368&nbsp;MtCO&#8322;e in 2023. Within a typical sector, carbon intensity varies thirteen-fold across products, so a sector average gets the products carrying 45.5% of traded emissions wrong by more than a factor of two.</p>
   </article>
   <article class="paper">
-    <span class="status">Under review</span>
+    <span class="status">Working paper &middot; being revised</span>
     <h3>Transparency and verification in the economics of decarbonization</h3>
     <p class="meta mono">Sole-authored &middot; a review of measurement practice at three scales &middot; replication: <a href="https://doi.org/10.5281/zenodo.21719291">10.5281/zenodo.21719291</a></p>
     <p>How does this research field check its own numbers? I coded 2,578 studies across eight research areas. 6.5% of disclosure studies analyse Scope&nbsp;3; two thirds of embodied-carbon studies never name the database their accounts rest on; 95.7% of decoupling studies never test against the Paris goals. Of nine verification practices, the only one most studies perform is declaring their modelling choices, which is a statement, not a check. Where my own coding proved unreliable, the failure is reported rather than dropped: 8 of 27 dimensions.</p>
-  </article>
-  <article class="paper">
-    <span class="status">Ready for submission</span>
-    <h3>Trade shocks redraw the global carbon map but do not shrink it</h3>
-    <p class="meta mono">Sole-authored &middot; replication: <a href="https://doi.org/10.5281/zenodo.21889661">10.5281/zenodo.21889661</a></p>
-    <p>When trade is disrupted, does the carbon in it shrink or just move? I track product-level embodied carbon through three events: China joining the WTO, the US&ndash;China tariff war, and the 2022 sanctions on Russia, then generalise over 35 accessions and 9 sanction episodes. Integration pulls carbon-intensive production in slowly (+31% after ten years); sanctions push it out fast (up to &minus;88% off the sanctioning market). The carbon does not vanish: Russia's lost exports reappear in China, India and Turkey. With a trade elasticity estimated from the tariff war rather than assumed, a European carbon border tax cuts the covered carbon by a few percent, not by the double digits often claimed.</p>
   </article>
   <article class="paper">
     <span class="status">Submission in preparation</span>
@@ -212,7 +212,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <div class="tablewrap"><table>
     <thead><tr><th>Package</th><th>Contents</th><th>DOI</th></tr></thead>
     <tbody>
-      <tr><td>Voluntary climate pledges</td><td>firm-year disclosure panel, event-study designs, fixed-boundary series</td><td><a href="https://doi.org/10.5281/zenodo.21627772">21627772</a></td></tr>
+      <tr><td>Corporate climate pledges</td><td>firm-year disclosure panel, event-study designs, fixed-boundary series</td><td><a href="https://doi.org/10.5281/zenodo.21627772">21627772</a></td></tr>
       <tr><td>Product-level Trade-LCA</td><td>embodied-carbon account by product, matching pipeline, both blind audits</td><td><a href="https://doi.org/10.5281/zenodo.20719018">20719018</a></td></tr>
       <tr><td>Transparency and verification</td><td>2,578-study corpus, coding protocol, reliability by dimension</td><td><a href="https://doi.org/10.5281/zenodo.21719291">21719291</a></td></tr>
       <tr><td>Trade shocks and the carbon map</td><td>22.4&nbsp;M bilateral flows, event studies, border-tax counterfactual</td><td><a href="https://doi.org/10.5281/zenodo.21889661">21889661</a></td></tr>
@@ -254,7 +254,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <h3 style="margin-top:1.8rem">Funded projects worked on</h3>
   <ul class="plain"><li><strong><a href="https://idave.ec-nantes.fr">ANR I-DAVE</a></strong> (2024&ndash;2027): an AI and knowledge-based framework for the reliability of life-cycle assessment, funded by the Agence Nationale de la Recherche, with Centrale Nantes (LS2N), UTC (Roberval), Toovalu and Cetim. The grant is held by Toovalu; I carry out its work on the company's side.</li><li><strong><a href="https://iris-e.univ-rennes.fr">IRIS-E</a></strong>, <em>Interdisciplinary Research and Innovative Solutions for Environmental transition</em>: appointed member of the working group of axis&nbsp;2, &ldquo;Interdisciplinary and co-constructed research&rdquo;, from December 2023 for a two-year mandate. IRIS-E is a winner of the national &ldquo;ExcellencES&rdquo; call of the French investment-for-the-future programme.</li></ul>
   <h3 style="margin-top:1.8rem">Service and expertise</h3><p>Member, <a href="https://sciencebasedtargets.org/">Science Based Targets initiative</a> Expert Working Group on Data Quality Assurance and Claims.</p>
-  <h3 style="margin-top:1.8rem">Education and training</h3><p>PhD in economics, Universit&eacute; de Rennes, 2023&ndash;2026. M.Sc. Financial and Economic Engineering, Universit&eacute; de Rennes, 2018&ndash;2020, with honours. B.Sc. Economics, Universit&eacute; de La R&eacute;union, 2015&ndash;2018, valedictorian. &ldquo;Tools for Macroeconomics&rdquo; summer school, London School of Economics, 2025. Doctoral module in scientific computing and data science, Coll&egrave;ge doctoral de Bretagne, 20&nbsp;hours.</p>
+  <h3 style="margin-top:1.8rem">Education and training</h3><p>PhD in economics, Universit&eacute; de Rennes, 2023&ndash;2026. M.Sc. Financial and Economic Engineering, Universit&eacute; de Rennes, 2018&ndash;2020, with honours. B.Sc. Economics, Universit&eacute; de La R&eacute;union, 2015&ndash;2018. &ldquo;Tools for Macroeconomics&rdquo; summer school, London School of Economics, 2025. Doctoral module in scientific computing and data science, Coll&egrave;ge doctoral de Bretagne, 20&nbsp;hours.</p>
   <h3 style="margin-top:1.8rem">Methods and tools</h3><p>Econometrics and causal inference on panel data (event studies, staggered designs, randomization inference), machine and deep learning for measurement, structural general-equilibrium modelling, life-cycle and input&ndash;output accounting, large-scale coding of research corpora. Python (pandas, scikit-learn, PyTorch), R, Matlab, Dynare, SQL, Git, LaTeX, HPC clusters. French (native), English (research and teaching), German (A2), Japanese (A1).</p>
 </section>
 
