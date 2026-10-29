@@ -146,6 +146,12 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <div class="section-head"><h2>Research</h2><span class="eyebrow">by status</span></div>
   <p class="mono">Drafts available on request.</p>
   <article class="paper">
+    <span class="status">Forthcoming &middot; <em>International Journal of Finance &amp; Economics</em></span>
+    <h3>Beyond reported emissions: uncovering hidden corporate carbon footprints</h3>
+    <p class="meta mono">with Fabien Rondeau, Tovonony Razafindrabe and Arthur Macherey &middot; accepted October 2026 &middot; replication: <a href="https://doi.org/10.5281/zenodo.23757920">10.5281/zenodo.23757920</a></p>
+    <p>How much of a company's supply-chain footprint is missing from its reports, and can the missing part be estimated? For each of the 15 standard reporting categories we check whether a company omits it or under-reports it, then estimate what is missing. Weighted by value, reported footprints miss 21.7% [19.5, 24.2] of the corrected total, and two thirds of the missing part sits in one category: the use of the products the company sells.</p>
+  </article>
+  <article class="paper">
     <span class="status jmp">Job market paper &middot; under review</span>
     <h3>Trade shocks redraw the global carbon map but do not shrink it</h3>
     <p class="meta mono">Sole-authored &middot; replication: <a href="https://doi.org/10.5281/zenodo.21889661">10.5281/zenodo.21889661</a></p>
@@ -158,19 +164,13 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
     <p>Does a voluntary climate pledge change what companies cut, or what they count? I follow companies that join the Science Based Targets initiative through their CDP disclosures, 2015&ndash;2023. In the year after a pledge, a company discloses 6.7 percentage points more of the Scope&nbsp;3 categories material to its sector. Reported Scope&nbsp;3 rises by 41%, while emissions within the categories it reported before the pledge fall by 32%, and Scope&nbsp;1 shows no lasting change: the sign of the measured effect depends on a boundary the company chooses.</p>
   </article>
   <article class="paper">
-    <span class="status">Forthcoming &middot; <em>International Journal of Finance &amp; Economics</em></span>
-    <h3>Beyond reported emissions: uncovering hidden corporate carbon footprints</h3>
-    <p class="meta mono">with Fabien Rondeau, Tovonony Razafindrabe and Arthur Macherey &middot; accepted October 2026 &middot; replication: <a href="https://doi.org/10.5281/zenodo.23757920">10.5281/zenodo.23757920</a></p>
-    <p>How much of a company's supply-chain footprint is missing from its reports, and can the missing part be estimated? For each of the 15 standard reporting categories we check whether a company omits it or under-reports it, then estimate what is missing. Weighted by value, reported footprints miss 21.7% [19.5, 24.2] of the corrected total, and two thirds of the missing part sits in one category: the use of the products the company sells.</p>
-  </article>
-  <article class="paper">
-    <span class="status">Working paper &middot; being revised</span>
+    <span class="status">Work in progress</span>
     <h3>A product-level Trade-LCA framework for embodied carbon accounting in global trade</h3>
     <p class="meta mono">Sole-authored &middot; preprint: <a href="https://doi.org/10.21203/rs.3.rs-10627706/v1">Research Square rs-10627706</a> &middot; code: <a href="https://doi.org/10.5281/zenodo.20719018">10.5281/zenodo.20719018</a></p>
     <p>Can the carbon in traded goods be measured product by product, and what do sector averages hide? I link bilateral trade flows to life-cycle emission factors for about 5,000 products and 120 countries, 1995&ndash;2023. A language model helps match customs codes to life-cycle processes, but only to pick among documented candidates, and its error rate is measured rather than assumed: a blind expert audit found 17 wrong matches per 100 products, and after repairs a second blind audit found 8. The audited account puts the carbon embodied in world goods trade at 14,368&nbsp;MtCO&#8322;e in 2023. Within a typical sector, carbon intensity varies thirteen-fold across products, so a sector average gets the products carrying 45.5% of traded emissions wrong by more than a factor of two.</p>
   </article>
   <article class="paper">
-    <span class="status">Working paper &middot; being revised</span>
+    <span class="status">Work in progress</span>
     <h3>Transparency and verification in the economics of decarbonization</h3>
     <p class="meta mono">Sole-authored &middot; a review of measurement practice at three scales &middot; replication: <a href="https://doi.org/10.5281/zenodo.21719291">10.5281/zenodo.21719291</a></p>
     <p>How does this research field check its own numbers? I coded 2,578 studies across eight research areas. 6.5% of disclosure studies analyse Scope&nbsp;3; two thirds of embodied-carbon studies never name the database their accounts rest on; 95.7% of decoupling studies never test against the Paris goals. Of nine verification practices, the only one most studies perform is declaring their modelling choices, which is a statement, not a check. Where my own coding proved unreliable, the failure is reported rather than dropped: 8 of 27 dimensions.</p>
@@ -212,6 +212,7 @@ footer{border-top:1px solid var(--rule);margin-top:1rem;padding:2rem 0 3.5rem;co
   <div class="tablewrap"><table>
     <thead><tr><th>Package</th><th>Contents</th><th>DOI</th></tr></thead>
     <tbody>
+      <tr><td>Hidden corporate carbon footprints</td><td>code for the CDP panel, category classification, correction engine and bootstrap; derived aggregates only</td><td><a href="https://doi.org/10.5281/zenodo.23757920">23757920</a></td></tr>
       <tr><td>Corporate climate pledges</td><td>firm-year disclosure panel, event-study designs, fixed-boundary series</td><td><a href="https://doi.org/10.5281/zenodo.21627772">21627772</a></td></tr>
       <tr><td>Product-level Trade-LCA</td><td>embodied-carbon account by product, matching pipeline, both blind audits</td><td><a href="https://doi.org/10.5281/zenodo.20719018">20719018</a></td></tr>
       <tr><td>Transparency and verification</td><td>2,578-study corpus, coding protocol, reliability by dimension</td><td><a href="https://doi.org/10.5281/zenodo.21719291">21719291</a></td></tr>
