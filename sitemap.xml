@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url><loc>https://florianpothin.com/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/fr.html"/><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/"/></url>
+<url><loc>https://florianpothin.com/</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/fr.html"/></url>
 <url><loc>https://florianpothin.com/fr.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/fr.html"/></url>
+<url><loc>https://florianpothin.com/research.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/research.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/recherche.html"/></url>
+<url><loc>https://florianpothin.com/recherche.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/research.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/recherche.html"/></url>
+<url><loc>https://florianpothin.com/teaching.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/teaching.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/enseignement.html"/></url>
+<url><loc>https://florianpothin.com/enseignement.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/teaching.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/enseignement.html"/></url>
+<url><loc>https://florianpothin.com/talks.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/talks.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/interventions.html"/></url>
+<url><loc>https://florianpothin.com/interventions.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/talks.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/interventions.html"/></url>
+<url><loc>https://florianpothin.com/record.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/record.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/parcours.html"/></url>
+<url><loc>https://florianpothin.com/parcours.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://florianpothin.com/record.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://florianpothin.com/parcours.html"/></url>
 <url><loc>https://florianpothin.com/CV_Florian_Pothin.pdf</loc></url>
 </urlset>
